@@ -1,0 +1,35 @@
+# UiPath specific
+.local/
+.objects/
+.screenshots/
+.settings/
+.tmh/
+*.log
+Logs/
+
+# Output and temporary files
+Data/Output/*
+!Data/Output/.gitkeep
+*.xlsx
+*.xls
+execution_*.txt
+
+# System files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Visual Studio / IDE
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Backup files
+*.bak
+*~
