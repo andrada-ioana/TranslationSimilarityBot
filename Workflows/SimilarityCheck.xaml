@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SimilarityCheck" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="SimilarityCheck_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SimilarityCheck" this:SimilarityCheck.inOriginalTextX="Automation is the use of technology to perform tasks with minimal human intervention. It helps improve efficiency, accuracy, and consistency in repetitive processes." xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="inoutResults" Type="InOutArgument(sd:DataTable)" />
+    <x:Property Name="inOriginalTextX" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>SimilarityCheck_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,6 +33,19 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -51,13 +72,140 @@
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SimilarityCheck" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SimilarityCheck" sap:VirtualizedContainerService.HintSize="802,2062.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[inoutResults]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="520,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;RunId&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ToolName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;LanguagePath&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;OutputZ&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;SimilarityScore&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;RunId&gt;run1&lt;/RunId&gt;&#xD;&#xA;    &lt;ToolName&gt;tool1&lt;/ToolName&gt;&#xD;&#xA;    &lt;LanguagePath&gt;en-&amp;gt;fr-&amp;gt;en&lt;/LanguagePath&gt;&#xD;&#xA;    &lt;OutputZ&gt;Automation refers to the use of technology to carry out tasks &lt;/OutputZ&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;RunId&gt;run2&lt;/RunId&gt;&#xD;&#xA;    &lt;ToolName&gt;toool2&lt;/ToolName&gt;&#xD;&#xA;    &lt;LanguagePath&gt;en&lt;/LanguagePath&gt;&#xD;&#xA;    &lt;OutputZ&gt;Automation refers to the use of technology to carry out tasks e21dwafawfwa&lt;/OutputZ&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[inoutResults]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="520,1947.5" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,1773.5" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Text Compare! - Find differences between two text files" sap:VirtualizedContainerService.HintSize="484,1709.5" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1460" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="similarityText" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA inputText1'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,261" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Text="[inOriginalTextX]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://text-compare.com/" CvTextArea="30, 492, 218, 11" CvTextArgument="Paste one version of a text here." CvType="Text" DesignTimeRectangle="25, 484, 933, 355" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'TEXTAREA inputText1'" FullSelectorArgument="&lt;webctrl id='inputText1' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputText1' tag='TEXTAREA' type='' class='inputText' aaname='' /&gt;" Guid="27ade156-563d-4dd5-bd2d-f5a714e46ffe" InformativeScreenshot="056bda027527e959e7b032b60dda9c5f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Text Compare! - Find differences between two text files' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'page tab'" sap:VirtualizedContainerService.HintSize="416,196.5" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[currentRow(&quot;OutputZ&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b5832cda-9cac-446c-b8a4-354953eac439" InformativeScreenshot="032ba1cc0468e6c1d780a2cd155351ab" Selector="&lt;webctrl id='inputText2' tag='TEXTAREA' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Compare!'" sap:VirtualizedContainerService.HintSize="416,194.5" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://text-compare.com/" CvElementArea="896, 427, 129, 44" CvTextArea="920, 440, 81, 20" CvTextArgument="Compare!" CvType="Button" DesignTimeRectangle="911, 437, 99, 26" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Compare!'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='compareButtonText' aaname='Compare!' check:innerText='Compare!' /&gt;" Guid="80f5ec69-61ee-41e1-8e96-c2b9c8c4302d" InformativeScreenshot="0d36ac16eb128dd7d62bccb2015125e4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Text Compare! - Find differences between two text files' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvElementArea="896, 427, 129, 44" CvTextArea="920, 440, 81, 20" CvTextArgument="Compare!" CvType="Button" DesignTimeRectangle="898, 430, 125, 40" ElementType="Button" FriendlyName="'Compare!'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='compareButton' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='compareButton' type='submit' tag='BUTTON' class='compareButton btn btn-success' aaname='Compare!' check:innerText='Compare!' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Automation is'" sap:VirtualizedContainerService.HintSize="416,194.5" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" TextString="[similarityText]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://text-compare.com/" CvTextArea="990, 454, 481, 14" CvType="AnyWordGroup" DesignTimeRectangle="991, 453, 900, 15" DesignTimeScaleFactor="1" FriendlyName="'Automation is'" FullSelectorArgument="&lt;webctrl id='top' tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='1' tag='PRE' /&gt;" FuzzySelectorArgument="&lt;webctrl id='top' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='PRE' aaname='Automation is the use of to perform tasks ' /&gt;" Guid="a9869dfc-0102-4920-ba17-3ee553f61367" ImageBase64="" InformativeScreenshot="d1c14aad6621b32d93e6c229b5b7a2b3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Text Compare! - Find differences between two text files' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[currentRow("SimilarityScore")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[similarityText]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[currentRow("Status")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">["SUCCESS"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clear all'" sap:VirtualizedContainerService.HintSize="416,187.5" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://text-compare.com/" CvElementArea="1429, 488, 81, 38" CvTextArea="1442, 500, 54, 13" CvTextArgument="Clear all" CvType="Button" DesignTimeRectangle="1431, 490, 77, 34" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Clear all'" FullSelectorArgument="&lt;webctrl parentid='textCompareForm' tag='TABLE' /&gt;&lt;webctrl aaname='Clear all' tableRow='1' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='textCompareForm' tag='TABLE' /&gt;&lt;webctrl aaname='Clear all' class='btn btn-default clearButton' tag='BUTTON' type='button' check:innerText='Clear all' /&gt;" Guid="f1c6adaa-b9b1-4387-bbd5-7a3a44d1b3a2" InformativeScreenshot="95d95c9079e3bfb3d1e6aa9a7b0d1c0f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Text Compare! - Find differences between two text files' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="2872, 100, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAHxSURBVDhPpZNZTxNRGIa5bmc/M+OlQmlLl6GdLtPSFvEPERONUSEGorhr3HEDFxQUV9xQQQXcUVE0Gk38Ma85Z2Z6DnLJm3yTk8k873m+i2mJ9LZiLdNCH+v+bmJj/+mB/Wsj7B/dsJYbsJYasD7XYX6swXzXBfNNFeZ8FeRlBWTW4wX27x7YPwPwWwPWlzqsT3WYHwLwdRVkLgBnPJCnZRhPSrzA+t4N62sALtZgvq/BfNsFc6EK8qoC8qIC8tyDQcHHJRgPijDuF4WCQDNME5z1QJ55MKbLMB4F4L0C9NsF6JMuLwg1w/gg1SzDeFiCMVWEfpeCLvSbLvTxPLRrOV5A5ipNWAzV1O8UoN9yV7zXLndCG3WEArrfdHk1OOlCn8ivANURh53Vs1lewPabKjY/ZJoTvmYY9aID9XwW6nAG6qkMlBNpXsD2EzS1sRy0K1SzkxecyUA5mYZyPA3laArK4Q6h4EYe2nVBdcSBesFhmmGUYykoR1KQD3VA3p+EvDfBC7SrOWiXhNuGs1BP+5oUDCPvS0IeSrCzNBDnBWy/c/y2MFRTPphkoBipvx3SzphQ8P9+VPOArynvSUAajEPa1Q6pP4bojhii29oQ3Sr8TKv2G0pA3h1nmgzsiyG6vc0Ht7QisnkDIr3recFa5h8u8yi6kQn9PAAAAABJRU5ErkJggg==" InformativeScreenshot="a67e5b12e856f609455fc55970e204c2.jpg" Selector="&lt;html app='chrome.exe' title='Text Compare! - Find differences between two text files' /&gt;" Title="Text Compare! - Find differences between two text files" Url="https://text-compare.com/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
   </Sequence>
 </Activity>
