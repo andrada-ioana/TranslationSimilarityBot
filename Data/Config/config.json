@@ -2,9 +2,7 @@
   "TranslatorTool1Url": "https://...",
   "TranslatorTool2Url": "https://...",
   "SimilarityToolUrl": "https://...",
-  "SourceLanguage": ["A"],
-  "TargetLanguage": ["B"],
-  "IntermediateLanguages": ["fr", "de", "es"],
+  "Languages": ["en", "ro", "fr", "de", "es", "it", "pt"],
   "TimeoutSeconds": 30,
   "RetryCount": 2
 }
