@@ -1,8 +1,5 @@
 ﻿{
-  "TranslatorTool1Url": "https://...",
-  "TranslatorTool2Url": "https://...",
-  "SimilarityToolUrl": "https://...",
-  "Languages": ["en", "ro", "fr", "de", "es", "it", "pt"],
+  "Languages": ["English", "Romanian", "French", "German", "Spanish", "Italian", "Portuguese"],
   "TimeoutSeconds": 30,
   "RetryCount": 2
 }

@@ -111,7 +111,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Translate_UsingTool2" sap:VirtualizedContainerService.HintSize="864.4000000000001,3839.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Translate_UsingTool2" sap:VirtualizedContainerService.HintSize="1250,3863" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="translatedTemp" />
     </Sequence.Variables>
@@ -120,71 +120,71 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="521.6,3816" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,3840" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="520,3096" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="522,3119" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google Translate" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,3032" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google Translate" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,3055" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,2834.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2857" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="0348a97a-e541-4d72-9625-3d4ace3d76eb" CvTextArea="655, 148, 60, 13" CvTextArgument="ENGLISH" CvType="Text" DesignTimeRectangle="394, 127, 570, 56" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='srcLangButton' tag='BUTTON' /&gt;" Guid="d632d5ce-77aa-4426-94ad-ab78ec682fcf" InformativeScreenshot="eeb34df70ad3bf46bfdaf0ba5cec4494.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_new' title='Dictionary and online translation - Yandex Translate.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_FromLang]" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_FromLang]" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="28793d4e-efd6-4a0c-9733-db859da04fcc" CvElementArea="406, 198, 1004, 34" CvType="InputBox" DesignTimeRectangle="406, 200, 1006, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="0f6be7a9-a45b-47cf-8ffc-218543c84455" InformativeScreenshot="df871910c8ac3bbd2a1ba21733b0455b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_new' title='Dictionary and online translation - Yandex Translate.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'English'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'English'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V5">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="61ddeec8-1d11-44e6-9f33-02c50c7f6688" CvTextArea="413, 307, 47, 15" CvTextArgument="English" CvType="Text" DesignTimeRectangle="406, 300, 1124, 28" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='English' aria-role='checkbox' tag='DIV' /&gt;" Guid="b1f06d0d-29b0-4b36-b1de-c9130892122d" InformativeScreenshot="f14665d39d085ed73ad29c7a89cf54ed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Yandex Translate - Dictionary and online translation' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="61ddeec8-1d11-44e6-9f33-02c50c7f6688" DesignTimeRectangle="8, 95, 0, 0" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='checkbox' tag='DIV' /&gt;" Guid="b1f06d0d-29b0-4b36-b1de-c9130892122d" InformativeScreenshot="f14665d39d085ed73ad29c7a89cf54ed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Yandex Translate - Dictionary and online translation' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Translate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Translate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="6ed19260-72c1-453c-8a66-10e8e9edbf3f" CvTextArea="1221, 148, 59, 13" CvTextArgument="RUSSIAN" CvType="Text" DesignTimeRectangle="972, 127, 570, 56" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='dstLangButton' tag='BUTTON' /&gt;" Guid="17c142ac-a3a4-4d69-987c-b3e84655a52f" InformativeScreenshot="895c76d46cdf4e8a53ee77187887699d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_new' title='Dictionary and online translation - Yandex Translate.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_ToLang]" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_ToLang]" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="576f44da-01f1-4f40-b57b-e871f9f24812" CvTextArea="417, 207, 130, 18" CvTextArgument="Search languages" CvType="Text" DesignTimeRectangle="406, 200, 1124, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="8b40838f-baf6-4326-b6be-89c114aa8e87" InformativeScreenshot="1c21d93eaafa2a0386ed8812a88ad34a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_new' title='Dictionary and online translation - Yandex Translate.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Spanish'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Spanish'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V5">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="8976b04b-8963-414e-9e46-755deed7ad3e" CvTextArea="412, 307, 52, 16" CvTextArgument="Spanish" CvType="Text" DesignTimeRectangle="406, 300, 1124, 28" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Spanish' aria-role='checkbox' tag='DIV' /&gt;" Guid="41c9dfc6-eb20-4e53-a80b-e7589698f1e6" InformativeScreenshot="97bb1d82083540041b33e6a6b8febeae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Yandex Translate - Dictionary and online translation' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="dc9cc2e9-5988-4e11-93a1-b42121d80bdd" DesignTimeRectangle="406, 248, 1124, 28" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='checkbox' tag='DIV' idx='2' /&gt;" Guid="41c9dfc6-eb20-4e53-a80b-e7589698f1e6" InformativeScreenshot="8138c0a79ce4a349b99a0291f51e65c5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Yandex Translate - Dictionary and online translation' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_Text]" Version="V5">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_Text]" Version="V5">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="74045a6f-f4b4-45fe-9b3e-f17c546e4629" CvTextArea="416, 211, 377, 34" CvTextArgument="Start typing or insert a link" CvType="Text" DesignTimeRectangle="416, 211, 377, 33" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="57b126d1-cedd-454b-8761-ced4f622c622" InformativeScreenshot="419d5079b24f95fef2f70ea1f639824e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_new' title='Dictionary and online translation - Yandex Translate.' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="451.2,126.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[String.IsNullOrEmpty(translatedTemp)]" DisplayName="While" sap:VirtualizedContainerService.HintSize="451.2,393.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="452,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[String.IsNullOrEmpty(translatedTemp)]" DisplayName="While" sap:VirtualizedContainerService.HintSize="452,395" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                     <ui:InterruptibleWhile.Body>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,259.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,260" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="innertext" DisplayName="Get Attribute 'SpanishRussianEnglish'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.2" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[translatedTemp]" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V5">
+                        <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="innertext" DisplayName="Get Attribute 'SpanishRussianEnglish'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,196" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[translatedTemp]" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V5">
                           <uix:NGetAttributeGeneric.Target>
                             <uix:TargetAnchorable BrowserURL="translate.yandex.com" CVScreenId="ac3ef22c-258e-40cf-84cf-7aec69570dd9" CvTextArea="995, 270, 37, 21" CvTextArgument="OH" CvType="Text" DesignTimeRectangle="972, 235, 570, 165" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='dstBox' tag='DIV' /&gt;" Guid="2a7d19dd-700d-4a3e-b58c-df1ec7eb1dd4" InformativeScreenshot="df7f93f11e0cb13dc3d44402dbfac707.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_new' title='he – Dictionary and online translation - Yandex Translate.' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NGetAttributeGeneric.Target>
@@ -192,25 +192,25 @@
                       </Sequence>
                     </ui:InterruptibleWhile.Body>
                   </ui:InterruptibleWhile>
-                  <If Condition="[translatedTemp.Contains(&quot;Too many requests&quot;)]" sap:VirtualizedContainerService.HintSize="451.2,727.2" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[translatedTemp.Contains(&quot;Too many requests&quot;)]" sap:VirtualizedContainerService.HintSize="452,729" sap2010:WorkflowViewState.IdRef="If_1">
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,181.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Throw Exception="[New BusinessRuleException(&quot;Rate limited by Tool1&quot;)]" sap:VirtualizedContainerService.HintSize="416,117.6" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                        <Throw Exception="[New BusinessRuleException(&quot;Rate limited by Tool1&quot;)]" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="Throw_1" />
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,412" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,413" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_3">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[out_TextTranslated]</OutArgument>
                           </Assign.To>
@@ -218,7 +218,7 @@
                             <InArgument x:TypeArguments="x:String">[translatedTemp]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_4">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[out_StatusMessage]</OutArgument>
                           </Assign.To>
@@ -251,14 +251,14 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap2010:Annotation.AnnotationText="catch and put in out_StatusMessage the error message that may appear&#xA;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,456.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence sap2010:Annotation.AnnotationText="catch and put in out_StatusMessage the error message that may appear&#xA;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="522,458" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Retrieve the error message from the exception and assign it to the output variable." sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign DisplayName="Retrieve the error message from the exception and assign it to the output variable." sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[out_StatusMessage]</OutArgument>
                 </Assign.To>
@@ -266,7 +266,7 @@
                   <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="486.4,169.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign sap:VirtualizedContainerService.HintSize="488,170" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[out_TextTranslated]</OutArgument>
                 </Assign.To>
