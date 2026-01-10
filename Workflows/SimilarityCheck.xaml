@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SimilarityCheck" this:SimilarityCheck.in_OriginalTextX="Automation is the use of technology to perform tasks with minimal human intervention. It helps improve efficiency, accuracy, and consistency in repetitive processes." xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SimilarityCheck" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_OriginalTextX" Type="InArgument(x:String)" />
     <x:Property Name="inout_ResultsDT" Type="InOutArgument(sd:DataTable)" />
@@ -112,34 +112,33 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SimilarityCheck" sap:VirtualizedContainerService.HintSize="802,3049.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SimilarityCheck" sap:VirtualizedContainerService.HintSize="926.8000000000001,2947.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[inout_ResultsDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="490,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;RunId&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;ToolName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;LanguagePath&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;OutputZ&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;SimilarityScore&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;InputX&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;RunId&gt;run1&lt;/RunId&gt;&#xA;    &lt;ToolName&gt;tool1&lt;/ToolName&gt;&#xA;    &lt;LanguagePath&gt;en-&amp;gt;fr-&amp;gt;en&lt;/LanguagePath&gt;&#xA;    &lt;OutputZ&gt;Automation refers to the use of technology to carry out tasks &lt;/OutputZ&gt;&#xA;    &lt;InputX&gt;Automation is the use of technology to perform tasks with minimal human intervention. It helps improve efficiency, accuracy, and consistency in repetitive processes.&lt;/InputX&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;RunId&gt;run2&lt;/RunId&gt;&#xA;    &lt;ToolName&gt;toool2&lt;/ToolName&gt;&#xA;    &lt;LanguagePath&gt;en&lt;/LanguagePath&gt;&#xA;    &lt;OutputZ&gt;Automation refers to the use of technology to carry out tasks e21dwafawfwa&lt;/OutputZ&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[inout_ResultsDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="490,2934.5" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[inout_ResultsDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="488.8,2924" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="488,2760.5" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="487.2,2751.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="454,2696.5" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="453.6,2687.2" sap2010:WorkflowViewState.IdRef="TryCatch_2">
               <TryCatch.Try>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Compare Text Online - CalcText" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1992" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Compare Text Online - CalcText" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1982.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1820.5" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1812" sap2010:WorkflowViewState.IdRef="Sequence_11">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="similarityText" />
                         </Sequence.Variables>
@@ -148,7 +147,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'First Text'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,251" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Text="[in_OriginalTextX]" Version="V3">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'First Text'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Text="[in_OriginalTextX]" Version="V3">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://calctext.com/compare-text?utm_source=chatgpt.com" CvElementArea="375, 463, 576, 209" CvType="InputBox" DesignTimeRectangle="377, 467, 572, 204" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='text1' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='text1' tag='TEXTAREA' type='' class='' aaname='First Text:' /&gt;" Guid="7423feab-b30a-479d-9343-5733c62817b1" InformativeScreenshot="fd6e451ecacaf587f9b4bab7ba6bd729.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_new' title='Compare Text Online - CalcText' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2">
                               <uix:TargetAnchorable.Anchors>
@@ -159,7 +158,7 @@
                             </uix:TargetAnchorable>
                           </uix:NTypeInto.Target>
                         </uix:NTypeInto>
-                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'page tab'" sap:VirtualizedContainerService.HintSize="416,196.5" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[currentRow(&quot;OutputZ&quot;).ToString]">
+                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'page tab'" sap:VirtualizedContainerService.HintSize="416,196" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[currentRow(&quot;OutputZ&quot;).ToString]">
                           <ui:TypeInto.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b5832cda-9cac-446c-b8a4-354953eac439" InformativeScreenshot="8186f65afb5cb5103f197b53a0c3bbb1" Selector="&lt;webctrl id='text2' tag='TEXTAREA' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -171,12 +170,12 @@
                             </ui:Target>
                           </ui:TypeInto.Target>
                         </ui:TypeInto>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Compare Texts'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198.5" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Version="V3">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Compare Texts'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2d69e42e-0b0f-4745-9ec7-a3b026ba3513" Version="V3">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="https://calctext.com/compare-text?utm_source=chatgpt.com" CvElementArea="372, 991, 1171, 49" CvTextArea="902, 1008, 116, 18" CvTextArgument="Compare Texts" CvType="Button" DesignTimeRectangle="377, 992, 1168, 50" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='compareButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='compareButton' tag='BUTTON' type='' class='action-button' aaname='                     Compare Texts                 ' check:innerText='Compare Texts' /&gt;" Guid="71c79efe-14bd-48f6-ab2d-335536086d5c" InformativeScreenshot="1d7125f34ca98fbe81eb664ae419b859.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_new' title='Compare Text Online - CalcText' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'SPAN  similarityValue'" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'SPAN  similarityValue'" sap:VirtualizedContainerService.HintSize="416,143.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
                           <ui:WaitUiElementAppear.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1cc325f4-c066-4b76-9233-104c5bc11781" InformativeScreenshot="c3df71db6d9949b7bc2df35d94793b00" Selector="&lt;webctrl tag='SPAN' class='meter-value' id='similarityValue' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -188,8 +187,8 @@
                             </ui:Target>
                           </ui:WaitUiElementAppear.Target>
                         </ui:WaitUiElementAppear>
-                        <ui:WaitAttribute Element="{x:Null}" Attribute="innerText" AttributeValue="[&quot;*&quot;]" DisplayName="Wait Attribute" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="WaitAttribute_2" TimeoutMS="30000" />
-                        <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innerText" DisplayName="Get Attribute 'SPAN  similarityValue'" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="GetAttribute_2">
+                        <ui:WaitAttribute Element="{x:Null}" Attribute="innerText" AttributeValue="[&quot;*&quot;]" DisplayName="Wait Attribute" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="WaitAttribute_2" TimeoutMS="30000" />
+                        <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innerText" DisplayName="Get Attribute 'SPAN  similarityValue'" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="GetAttribute_2">
                           <ui:GetAttribute.Result>
                             <OutArgument x:TypeArguments="x:String">[similarityText]</OutArgument>
                           </ui:GetAttribute.Result>
@@ -204,7 +203,7 @@
                             </ui:Target>
                           </ui:GetAttribute.Target>
                         </ui:GetAttribute>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="Assign_5">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Object">[currentRow("SimilarityScore")]</OutArgument>
                           </Assign.To>
@@ -212,7 +211,7 @@
                             <InArgument x:TypeArguments="x:String">[similarityText]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="Assign_6">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Object">[currentRow("Status")]</OutArgument>
                           </Assign.To>
