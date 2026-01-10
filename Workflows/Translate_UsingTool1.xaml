@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Translate_UsingTool1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Translate_UsingTool1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Text" Type="InArgument(x:String)" />
     <x:Property Name="in_FromLang" Type="InArgument(x:String)" />
@@ -262,7 +262,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Translate_UsingTool1" sap:VirtualizedContainerService.HintSize="1250,4150" sap2010:WorkflowViewState.IdRef="Sequence_16">
+  <Sequence DisplayName="Translate_UsingTool1" sap:VirtualizedContainerService.HintSize="1034,4078.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="translatedTemp" />
     </Sequence.Variables>
@@ -271,88 +271,90 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,4127" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="521.6,4055.2" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="522,3406" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="520,3335.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google Translate" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,3342" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google Translate" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,3271.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,3144" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,3073.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V3">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="translate.google.com" CVScreenId="0f4d7be1-bd25-4ea5-bfdb-dfbc7277365c" CvElementArea="683, 292, 23, 21" CvType="ArrowButton" DesignTimeRectangle="675, 283, 40, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;button&amp;gt;div' idx='3' isleaf='1' tag='DIV' /&gt;" Guid="5c90a0dc-a4b9-46f6-ad2a-dfd8a35e2a2d" InformativeScreenshot="ec3fafceea47cfc16770a20c296c9290.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="deepl.com/en/translator" CVScreenId="b8d855fd-c3e3-495f-ad7a-4605e3c67794" CvElementArea="298, 484, 26, 24" CvTextArea="161, 488, 130, 21" CvTextArgument="Detect language" CvType="ArrowButton" DesignTimeRectangle="149, 478, 190, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Select source language. Currently selected:Detect language' tag='BUTTON' type='button' class='Button as-ghost as-small is-truncated' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Select source language. Currently selected:&amp;#xA;Detect language' /&gt;" Guid="03d04438-7db0-4823-8916-031cefe61e55" InformativeScreenshot="3b89d088866db00c381ee68eab1f15fe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DeepL Translate: The world&amp;apos;s most accurate translator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="b8d855fd-c3e3-495f-ad7a-4605e3c67794" CvElementArea="298, 484, 26, 24" CvType="ArrowButton" DesignTimeRectangle="305, 495, 12, 6" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;button&amp;gt;span&amp;gt;span&amp;gt;svg&amp;gt;use' href='/img/sprite.svg#ChevronDown' tag='use' /&gt;" Guid="f0174630-740e-45bd-9b9c-3ffce52aad18" SearchSteps="Selector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_FromLang]" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_FromLang]" Version="V3">
                     <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="translate.google.com" CVScreenId="a11b6ba2-45be-4c4a-a9b4-7ad3b5a89639" CvTextArea="385, 346, 128, 20" CvTextArgument="Search languages" CvType="Text" DesignTimeRectangle="370, 329, 1230, 54" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="a392843c-64c1-436d-84ed-0b237d0caad5" InformativeScreenshot="caded01840a024db898af9cec5a48769.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="deepl.com/en/translator" CVScreenId="ae99de1b-899e-4934-b610-8c0caf35d2e9" CvTextArea="520, 465, 128, 18" CvTextArgument="Search languages" CvType="Text" DesignTimeRectangle="472, 453, 661, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='radix-:rar:' tag='DIV' /&gt;" Guid="26bd334e-0e01-472c-84ad-69949d3695ff" InformativeScreenshot="89fea370614b58ddafbae4ef68f59ab8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DeepL Translate: The world&amp;apos;s most accurate translator' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,405" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V3" />
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Translate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V3">
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,404" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V3" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Translate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V3">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="translate.google.com" CVScreenId="635e622e-9629-4cd6-bb59-0a7f973be2fa" CvElementArea="1197, 291, 24, 22" CvType="ArrowButton" DesignTimeRectangle="1189, 283, 40, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;button&amp;gt;div' idx='6' isleaf='1' tag='DIV' /&gt;" Guid="317c681d-b838-4254-8d17-06b756052c05" InformativeScreenshot="2887a7d91776cf461ef7acdf791201d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="deepl.com/en/translator" CVScreenId="81f45cce-512b-4f02-be53-1e84a4675883" CvElementArea="927, 397, 21, 19" CvType="ArrowButton" DesignTimeRectangle="928, 397, 20, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;button&amp;gt;span&amp;gt;span&amp;gt;svg' idx='2' tag='svg' /&gt;" Guid="980ee8f9-a8dc-40f7-b161-3ba5eeb9c439" InformativeScreenshot="53886b630d416e8a464a9e652bae6145.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DeepL Translate: The world&amp;apos;s most accurate translator' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="81f45cce-512b-4f02-be53-1e84a4675883" CvElementArea="927, 397, 21, 19" CvTextArea="858, 398, 65, 14" CvTextArgument="Romanian" CvType="ArrowButton" DesignTimeRectangle="847, 391, 113, 32" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Select target language. Currently selected:RomanianRomanian' tag='BUTTON' type='button' class='Button as-ghost as-small is-truncated' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Select target language. Currently selected:&amp;#xA;Romanian' /&gt;" Guid="17774071-0b03-4ce3-a8b4-78df51ca6691" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_ToLang]" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_ToLang]" Version="V3">
                     <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="translate.google.com" CVScreenId="a1ed6709-61d1-427a-85e5-aed5700e6530" CvTextArea="385, 346, 128, 20" CvTextArgument="Search languages" CvType="Text" DesignTimeRectangle="370, 329, 1230, 54" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' type='text' /&gt;" Guid="ff073f5e-901e-4367-a775-d01e3612572f" InformativeScreenshot="b5c8af909a6a02f079430ed47d497507.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="deepl.com/en/translator" CVScreenId="65cc0a1a-8743-4e2c-bf2d-524d5f2b44b3" DesignTimeRectangle="472, 453, 661, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='radix-:rat:' tag='DIV' class='mb-3 rounded border border-transparent px-3 py-2 focus-within:border-blue-500' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="df02822b-4ceb-402c-a977-c836a02d80e8" InformativeScreenshot="8ac13de88027aaa55939954a20340f71.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DeepL Translate: The world&amp;apos;s most accurate translator' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,405" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="HardwareEvents" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V3" />
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_Text]" Version="V5">
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,404" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="HardwareEvents" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V3" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Text="[in_Text]" Version="V5">
                     <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="translate.google.com" DesignTimeRectangle="321, 327, 636, 166" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz' tag='C-WIZ' /&gt;" Guid="246da829-326b-4b7c-b9c9-09929d995b6a" InformativeScreenshot="bc0056cdbbb03ec228438a07714087df.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="deepl.com/en/translator" CVScreenId="9f7fe011-7c41-420d-a391-ea5779bac260" CvElementArea="53, 479, 722, 457" CvType="InputBox" DesignTimeRectangle="51, 480, 719, 454" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='D-TEXTAREA' /&gt;" Guid="2fc509a2-34e4-4ace-a6cf-342145de0aac" InformativeScreenshot="b822f7f4e7055ce906c6b97dcc9f601b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_new' title='DeepL Translate: The world&amp;apos;s most accurate translator' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[String.IsNullOrEmpty(translatedTemp)]" DisplayName="While" sap:VirtualizedContainerService.HintSize="452,395" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
-                    <ui:InterruptibleWhile.Body>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,260" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="innertext" DisplayName="Get Attribute 'SpanishRussianEnglish'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,196" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[translatedTemp]" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V5">
-                          <uix:NGetAttributeGeneric.Target>
-                            <uix:TargetAnchorable BrowserURL="translate.google.com" CVScreenId="87a62345-9fcb-4230-a824-57010363f3e4" CvElementArea="965, 325, 636, 169" CvType="InputBox" DesignTimeRectangle="981, 340, 238, 29" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='ryNqvb' tag='SPAN' /&gt;" Guid="abc3b1a7-1aaa-4b82-9615-917b7d82b024" InformativeScreenshot="da643c80a9a7746b395c70ad63d8481a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Translate' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                          </uix:NGetAttributeGeneric.Target>
-                        </uix:NGetAttributeGeneric>
-                      </Sequence>
-                    </ui:InterruptibleWhile.Body>
-                  </ui:InterruptibleWhile>
-                  <If Condition="[translatedTemp.Contains(&quot;Too many requests&quot;)]" sap:VirtualizedContainerService.HintSize="452,729" sap2010:WorkflowViewState.IdRef="If_1">
+                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="451.2,126.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="innertext" DisplayName="Get Attribute 'SpanishRussianEnglish'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,204" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[translatedTemp]" ScopeIdentifier="3d410cd9-2845-4b08-a611-e7f368979b6a" Version="V5">
+                    <uix:NGetAttributeGeneric.Target>
+                      <uix:TargetAnchorable BrowserURL="deepl.com/en/translator" DesignTimeRectangle="812, 438, 721, 87" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='translation-target-heading' tag='D-TEXTAREA' /&gt;" Guid="e6b79afb-a314-41c1-9798-8e7a65e064c5" InformativeScreenshot="7d03dc05b5314fe11c930dc062dc2c7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DeepL Translate: The world&amp;apos;s most accurate translator' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NGetAttributeGeneric.Target>
+                  </uix:NGetAttributeGeneric>
+                  <If Condition="[translatedTemp.Contains(&quot;Too many requests&quot;)]" sap:VirtualizedContainerService.HintSize="451.2,727.2" sap2010:WorkflowViewState.IdRef="If_1">
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,181.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Throw Exception="[New BusinessRuleException(&quot;Rate limited by Tool1&quot;)]" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                        <Throw Exception="[New BusinessRuleException(&quot;Rate limited by Tool1&quot;)]" sap:VirtualizedContainerService.HintSize="416,117.6" sap2010:WorkflowViewState.IdRef="Throw_1" />
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,413" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,412" sap2010:WorkflowViewState.IdRef="Sequence_18">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="Assign_5">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[out_TextTranslated]</OutArgument>
                           </Assign.To>
@@ -360,7 +362,7 @@
                             <InArgument x:TypeArguments="x:String">[translatedTemp]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="Assign_6">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[out_StatusMessage]</OutArgument>
                           </Assign.To>
@@ -382,7 +384,7 @@
               </ActivityFunc>
             </uix:NApplicationCard.OCREngine>
             <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJGSURBVDhPhZHLaxNRGMVn5cL/yZXQR5omfYkFuym0iBtxIbgQNJZA3g98pA+zsC0NCDWmWNI2m1i0gaQNlYlJZvKYSTJJA1Vw6s1ddXHk3mlCTcUeOFy43N/5znwj3PXr4akgwWSAYJzZTzDmJ7D6CKbdjVvCdWLgVJBiMkgxwRygGA9QjPkprI7T1f73VzQRIP+G/RQWz49zmy1/o5/5S6x2F+4PsPooXm6qkiyXP6mquqVpWqxe12KKUo/VarWPhUJlWmDfzMD7YYqMrENp6jjI6/zO4qN4GD6FmCui2Wyh3W7j5OSEu9VqQdM0CGxhbOKhrOPFJuGTZ0IGPOplLTr4fCBCksscuhJg8RlQvf2Ln692CKS6ju+KzgPMXoqlWAWimMfcczcHu240GhAsXvbLjAYLHwifbI8SJMUzDps9FPe8JTiX1uENR+AKb+BJYAWvI1EjYNRrQHNvKdKSjlpbx6F8htnlDodHPBRsyOJGHF/TWaxFtxFPfkGz2TQCzB7Sq9qzxzCDTe4Oht0dBCIinvpXYA+9Q7lchqqqRsCIm/SAy+BleNjVwYPFBh47Q7AvrkKSJFSrVSiKAsHkJj2gC/XAC3jI1YHJpSORzGArkYRjZQ2lUhmVSgXCwMLPN0PO3+h68MIDDuNk8KDT8PpeBcWihP1UGrIsGwH/k812dPP2nTiYrbN7SO5/gyTJHGZ7uDaAaf5Romae2cX2zhFyuTxv0A1g7n9/Rc+cu/Pvoylks8cQxRwKhQKKxSJfZCpzvPwHH3F9HbAh89sAAAAASUVORK5CYII=" InformativeScreenshot="58a45955477e76468ab2b48f4dc226a8.jpg" Selector="&lt;html app='chrome.exe' title='Google Translate' /&gt;" Url="https://translate.google.com/?sl=ru&amp;tl=en&amp;op=translate" />
+              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAgRJREFUWEfFV7FOAkEQ5Qu4+QJDqeyaUGpiYcMexgalIzGhlEJjYWFiwXWY2NiopQZDqTY2mhgKY2NDpKHREAsTO42xXzOrIDe3wLJ3Jy95gcDsvnfzZo8jkQgByOSBfvYvQOFkWlQcLt4dJjr4ntbEBuC5RRR1mJCEHWDZEq2PDJDJpRzmNjTCPiaZe4K1dL01SLsDgoOIa0LPCMyI/IB2m9IuFshkMybtHoNN41iSXFQ0GyhWD8/ky+ubvLq9l7NiLfD9KMKMu0X1AnC4aNKFyPLuvuzH3cNjoMaAHaoXwKDMq4c1nwHsBK0xoL2B5dK2z0DXBHaG1g6hvQHkQmFdHtXOlSjOABpA1C9vTGcinAEd0UzXyNHZhWy1n2Wr/aQGltbGYgCJV09nBLFQKNPaeAwgp+ZWqb4sbnq0Lh4DU/Mr6hWPZhcYi2YuojeAWX98fvXajTOxs3esEw9voLhZkfXLayWAx/LvFFz3ujCC9gaKG15fuj/AlqMRWjuE9gbolE/8TohtpzUGHG0AePZAs1ARBwzbjndDw8x9hLR7QPW0AJYrOczVdsKKXLwDM/gp7gdM51LAxGlgszGJVw2pEI9maMSmG8DdBj5B0/2sMU4skBYeXR8JVCxceFTQJ87cBl0XOYbNB8wu5Wl9bNDFEmnupviNRf1xmYgBRDeWiRmwxTdMGqAwSqfALAAAAABJRU5ErkJggg==" InformativeScreenshot="78de9b1c404e2773de445bd7a74cae21.jpg" Selector="&lt;html app='chrome.exe' htmlwindowname='_new' title='DeepL Translate: The world&amp;apos;s most accurate translator' /&gt;" Url="https://www.deepl.com/en/translator" Version="V2" />
             </uix:NApplicationCard.TargetApp>
           </uix:NApplicationCard>
         </Sequence>
@@ -393,14 +395,14 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap2010:Annotation.AnnotationText="catch and put in out_StatusMessage the error message that may appear&#xA;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="522,458" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence sap2010:Annotation.AnnotationText="catch and put in out_StatusMessage the error message that may appear&#xA;" DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,456.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Retrieve the error message from the exception and assign it to the output variable." sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign DisplayName="Retrieve the error message from the exception and assign it to the output variable." sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[out_StatusMessage]</OutArgument>
                 </Assign.To>
